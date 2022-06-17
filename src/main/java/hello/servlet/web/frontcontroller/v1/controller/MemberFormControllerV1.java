@@ -11,6 +11,7 @@ import java.io.IOException;
 public class MemberFormControllerV1 implements ControllerV1 {
     @Override
     public void process(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
         String viewPath = "/WEB-INF/views/new-form.jsp";
         RequestDispatcher dispatcher = req.getRequestDispatcher(viewPath);// 컨트롤러 -> 뷰 이동
         dispatcher.forward(req,res);
